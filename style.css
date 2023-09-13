@@ -1,0 +1,58 @@
+    /* grid-auto-flow: dense; */
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 30px 50px 50px 50px;
+        font-family: sans-serif;
+        background: #F0F1F2;
+    }
+
+    h1 {
+        margin: 0;
+        font-family: 'Marck Script', cursive;
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 1.8rem;
+        margin: -15px 0 0 0;
+    }
+
+    p {
+        margin: 0 0 20px 0;
+    }
+
+    .close {
+        background: none;
+        color: black;
+        border: 0;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        align-items: start;
+        justify-items: center;
+        background-color: #42eff5;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+
+    .gallery img:nth-child(2) {
+        grid-column: span 3;
+        grid-row: span 2;
+    } 
+
+    
+
