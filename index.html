@@ -36,13 +36,17 @@
             background: #F0F1F2;  
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 0 0 5px 0;
+        h1 {
+            margin: 0;
+            font-family: 'Marck Script', cursive;
+            font-size: 5rem;
+        }
+
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 1.8rem;
+            margin: 0; 
         }
 
         p {
@@ -158,7 +162,7 @@
         function generateHTML([h,v]) {
             return `
                 <div class="item h${h} v${v}">
-                    <img src="images/${randomNumber(9)}.jpg">  
+                    <img src="images/${randomNumber(16)}.jpg">  
                     <div class="item__overlay">
                         <button> View -> </button>
                     </div>  
@@ -180,7 +184,7 @@
             overlay.classList.remove('open');
         }
         const digits = Array.from({ length: 15}, () => 
-        [randomNumber(4), randomNumber(4)]).concat([[1,1], [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
+        [randomNumber(3), randomNumber(3)]).concat([[1,1], [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
         [1,1],[1,1],[1,1]]);
 
         const html = digits.map(generateHTML).join('');
