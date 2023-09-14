@@ -10,71 +10,20 @@
     <title>AquaFab - Designer Swimming Pools</title>
 </head>
 <body>
-    <header class="header">
-        <h1>AquaFab</h1>
-        <h2>designer swimming pools</h2>
-    </header>
-
-    <!-- <div class="overlay">
-        <div class="overlay-inner">   
-            <button class="close">× Close</button>
-            <img>
-        </div>
-
+    <div class="top">
+        <header class="header">
+            <h1>AquaFab</h1>
+            <h2>designer swimming pools</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="faq.html" >FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </div>
-
-    <section class="gallery">
-    </section>
-
-
-
-    <script id="__bs_script__">
-
-        const gallery = document.querySelector('.gallery');
-        const overlay = document.querySelector('.overlay');
-        const overlayImage = overlay.querySelector('img');
-        const overlayClose = overlay.querySelector('.close');
-
-        function generateHTML([h,v]) {
-            return `
-                <div class="item h${h} v${v}">
-                    <img src="images/${randomNumber(16)}.jpg">  
-                    <div class="item__overlay">
-                        <button> View -> </button>
-                    </div>  
-                </div>
-            `;
-        }
-
-        function randomNumber(limit) {
-            return Math.floor(Math.random() * limit) + 1;
-        }
-
-        function handleClick(e){
-            const src = e.currentTarget.querySelector('img').src;
-            overlayImage.src = src;
-            overlay.classList.add('open');
-        }
-
-        function close(){
-            overlay.classList.remove('open');
-        }
-        const digits = Array.from({ length: 25}, () => 
-        [randomNumber(3), randomNumber(3)]).concat([[1,1], [1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],
-        [1,1],[1,1],[1,1]]);
-
-        const html = digits.map(generateHTML).join('');
-        gallery.innerHTML = html;
-
-        const items = document.querySelectorAll('.item');
-
-        items.forEach(item => item.addEventListener('click', handleClick));
-
-        overlayClose.addEventListener('click', close);
-
-    </script>
- -->
-
+    
     <section class="gallery">
         <img src="images/1.jpg" alt="" class="img img1">
         <img src="images/2.jpg" alt="" class="img img2">
@@ -91,11 +40,29 @@
         <img src="images/14.jpg" alt="" class="img">
         <img src="images/15.jpg" alt="" class="img">
         <img src="images/16.jpg" alt="" class="img">
-    </section>
+    </section> 
 
 
 
+    <!-- <div class="demo"></div> -->
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js" integrity="sha512-wrQIZRuIVRafoAsp5i2HIXa+3oF+lQqx4eOMAdw+vt7npivM7+D4OMIZPhlkdbV18VxZLkn2QaOii6cr8c1+dA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+
+    <script>
+
+        $(document).ready(function(){
+            $('.gallery').ripples({
+                resolution: 500,
+                dropRadius: 20,
+                perturbance: 0.03
+            })
+        })
+
+    </script>
+   
 
 
 </body>
