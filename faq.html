@@ -18,9 +18,8 @@
     <div class="top">
         <header class="header">
             <a href="index.html">
-                <h1>AquaFab
-            </a></h1>
-            <h2>designer swimming pools</h2>
+                <h1>AquaFab</h1>
+                <h2>designer swimming pools</h2>
             </a>
         </header>
         <nav>
@@ -33,28 +32,46 @@
     </div>
 
     <section class="faq">
-        <div class="blah">
+        <div class="question">
             <button class="accordion">Here's a question!</button>
             <div class="panel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
         </div>
         
-
-        <button class="accordion">Here's another question!</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. </p>
+        <div class="question">
+            <button class="accordion">Here's another question!</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. </p>
+            </div>
         </div>
-
-        <button class="accordion">And one more question!</button>
-        <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. </p>
+        
+        <div class="question">
+            <button class="accordion">And one more question!</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. </p>
+            </div>
         </div>
+        
     </section>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js" integrity="sha512-wrQIZRuIVRafoAsp5i2HIXa+3oF+lQqx4eOMAdw+vt7npivM7+D4OMIZPhlkdbV18VxZLkn2QaOii6cr8c1+dA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
     <script>
+
+        $(document).ready(function(){
+                    $('.faq').ripples({
+                        resolution: 500,
+                        dropRadius: 20,
+                        perturbance: 0.03
+                    })
+                })
+
         var acc = document.getElementsByClassName("accordion");
         var i;
 
