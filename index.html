@@ -23,8 +23,59 @@
             </ul>
         </nav>
     </div>
+
+    <main>
+        <section class="gallery">
+            <img src="images2/pool1.jpg" alt="" class="img img1">
+            <img src="images2/pool2.jpg" alt="" class="img img2">
+            <img src="images2/pool3.jpg" alt="" class="img img3">
+            <img src="images2/pool4.jpg" alt="" class="img img4">
+            <!-- <img src="images2/pool5.jpg" alt="" class="img img5"> -->
+        </section>
+        <section class="about-us"></section>
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="question">
+                <button class="accordion">Here's a question!</button>
+                <div class="panel">
+                    <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+            
+            <div class="question">
+                <button class="accordion">Here's another question!</button>
+                <div class="panel">
+                    <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. </p>
+                </div>
+            </div>
+            
+            <div class="question">
+                <button class="accordion">And one more question!</button>
+                <div class="panel">
+                    <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. </p>
+                </div>
+            </div>
+            
+            <div class="question">
+                <button class="accordion">Keep asking questions! We love them!</button>
+                <div class="panel">
+                    <p class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact"></section>
+    </main>
     
-    <section class="gallery">
+    <footer>
+
+    </footer>
+
+
+
+    <!-- <section class="gallery">
         <img src="images/1.jpg" alt="" class="img img1">
         <img src="images/2.jpg" alt="" class="img img2">
         <img src="images/3.jpg" alt="" class="img img3">
@@ -40,11 +91,10 @@
         <img src="images/14.jpg" alt="" class="img">
         <img src="images/15.jpg" alt="" class="img">
         <img src="images/16.jpg" alt="" class="img">
-    </section> 
+    </section>  -->
 
 
 
-    <!-- <div class="demo"></div> -->
         
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
@@ -60,6 +110,21 @@
                 perturbance: 0.03
             })
         })
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
 
     </script>
    
