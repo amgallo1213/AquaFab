@@ -1,152 +1,3 @@
-/*   
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        padding: 30px 50px 50px 50px;
-        font-family: sans-serif;
-        background: #F0F1F2;
-    }
-
-    h1 {
-        margin: 0;
-        font-family: 'Marck Script', cursive;
-        font-size: 5rem;
-    }
-
-
-    h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
-        font-size: 1.8rem;
-        margin: -15px 0 0 0;
-    }
-
-
-    p {
-        margin: 0 0 20px 0;
-    }
-
-    .top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    li {
-        font-family: 'Montserrat', sans-serif;
-        list-style-type: none;
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .close {
-        background: none;
-        color: black;
-        border: 0;
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-        align-items: start;
-        justify-items: center;
-        background-color: #42eff5;
-        padding: 20px;
-        margin-top: 30px;
-    }
-
-    .gallery img {
-        max-width: 100%;
-    }
-
-    .gallery img:nth-child(2) {
-        grid-column: span 3;
-        grid-row: span 2;
-    }
-
-    .faq    {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: #42eff5;
-        padding: 20px;
-        margin-top: 30px;
-        font-family: 'Montserrat', sans-serif;
-        /* background-image: url(images/9.jpg); */
-
-/* }
-
-    .question   {
-        padding: 20px 0 20px 40px;
-        grid-column: span 4;
-    }
-    .accordion {
-        background-color: #F0F1F2;
-        color: #F0F1F2;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 20px;
-        transition: 0.4s;
-        font-family: 'Montserrat', sans-serif;
-        background-image: url(images/17.jpg);
-    }
-
-    .active,
-    .accordion:hover {
-        background-color: #42eff5;
-    }
-
-    .accordion:after {
-        color: #69f7fc;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
-
-    .panel {
-        padding: 0 18px;
-        background-color: #F0F1F2;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-
-    .faq-answer   {
-        padding: 20px 10px 10px 10px;
-    }
-
-#about-main {
-    width: 70vw;
-    height: auto;
-    background-color: #42eff5;
-    margin: 50px;
-}  
-.about-us   {
-    padding: 20px;
-    margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-}   */
-
-
 * {
     box-sizing: border-box;
 }
@@ -238,6 +89,13 @@ h3  {
     text-align: center;
 }
 
+.about-us   {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .faq    {
     margin-top: 80px;
 }
@@ -275,4 +133,10 @@ h3  {
     transition: max-height 0.2s ease-out;
     font-family: 'Montserrat', sans-serif;
     text-align: right;
+}
+
+.contact-inner  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
